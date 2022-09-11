@@ -6,6 +6,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    opacity: 0;
+    z-index: 3;
+    animation: textFadeIn 1s 2s ease-in forwards;
 }
 .Widgets-Left_cta {
     height: 100%;

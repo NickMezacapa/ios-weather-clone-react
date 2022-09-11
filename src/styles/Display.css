@@ -9,6 +9,5 @@
     width: 650px;
     margin-top: 1rem;
     z-index: 2;
-    animation: textFadeIn 1s ease-in forwards;
-    opacity: 0;
+    opacity: 1;
 }
