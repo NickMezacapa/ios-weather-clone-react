@@ -1,0 +1,14 @@
+.Display-iPhone_cta {
+    position: absolute;
+    top: 8rem;
+    background-image: url('../assets/blank-iphone.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 750px;
+    width: 650px;
+    margin-top: 1rem;
+    z-index: 2;
+    animation: textFadeIn 1s ease-in forwards;
+    opacity: 0;
+}

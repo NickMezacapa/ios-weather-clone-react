@@ -1,0 +1,25 @@
+.Widgets {
+    height: 2rem;
+    width: 90%;
+    position: absolute;
+    top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Widgets-Left_cta {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 12px;
+}
+.Widgets-Right_cta {
+    height: 90%;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 12px;
+}
