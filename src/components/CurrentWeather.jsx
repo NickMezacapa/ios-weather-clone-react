@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import useFetch from './useFetch';
 import '../styles/CurrentWeather.css';
 
 export default function CurrentWeather() {
@@ -7,6 +8,9 @@ export default function CurrentWeather() {
     const [weatherDescription, setWeatherDescription] = useState('Partly Cloudy');
     const [weatherHigh, setWeatherHigh] = useState(91);
     const [weatherLow, setWeatherLow] = useState(76);
+
+    const [latitude, longitude] = useFetch();
+    console.log(latitude, longitude);
 
 
   return (

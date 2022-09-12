@@ -12,12 +12,21 @@ body, html {
 }
 .App-Intro {
 	position: absolute;
-	top: 1rem;
+	top: 2rem;
+	margin-right: 1.2rem;
 	opacity: 0;
+	display: flex;
+	justify-content: space-evenly;
+	gap: 2rem;
+	height: 5rem; 
 	animation: textFadeIn 1s ease-in forwards;
 }
+.App-Intro img {
+	transform: scale(0.8);
+}
 .App-Intro_h1 {
-    font-size: 42px;
+    font-size: 32px;
+	transform: scale(1.2);
 	background: linear-gradient(91.36deg,
 			#eca658 0%,
 			#f391a6 13.02%,
