@@ -23,6 +23,7 @@ body, html {
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
+	user-select: none;
 }
 .App-Intro img {
 	transform: scale(0.8);
@@ -90,6 +91,12 @@ body, html {
 }
 #App-Navigate_howItWorks {
 	color: #2997ff;
+	transition: 0.3s ease;
+}
+#App-Navigate_howItWorks:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	user-select: none;
 }
 
 @keyframes textFadeIn {
