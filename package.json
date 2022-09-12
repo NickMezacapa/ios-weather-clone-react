@@ -7,6 +7,7 @@
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
     "dotenv": "^16.0.2",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.37",
     "react": "^18.2.0",
@@ -27,6 +28,57 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "plugins": [
+      "simple-import-sort"
+    ],
+    "rules": {
+      "react/jsx-sort-props": [
+        2,
+        {
+          "callbacksLast": true,
+          "shorthandFirst": true,
+          "shorthandLast": false,
+          "multiline": "ignore",
+          "ignoreCase": false,
+          "noSortAlphabetically": false,
+          "reservedFirst": true,
+          "locale": "auto"
+        }
+      ],
+      "simple-import-sort/imports": "error",
+      "simple-import-sort/exports": "error"
+    },
+    "overrides": [
+      {
+        "files": [
+          "*.js",
+          "*.jsx",
+          "*.ts",
+          "*.tsx"
+        ],
+        "rules": {
+          "simple-import-sort/imports": [
+            "error",
+            {
+              "groups": [
+                [
+                  "^react",
+                  "^@?\\w",
+                  "^(@|components)(/.*|$)",
+                  "^\\u0000",
+                  "^\\.\\.(?!/?$)",
+                  "^\\.\\./?$",
+                  "^\\./(?=.*/)(?!/?$)",
+                  "^\\.(?!/?$)",
+                  "^\\./?$",
+                  "^.+\\.?(css)$"
+                ]
+              ]
+            }
+          ]
+        }
+      }
     ]
   },
   "browserslist": {

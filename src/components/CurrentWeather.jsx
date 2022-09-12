@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useRef, useState } from 'react';
 import useGetWeather from '../hooks/useGetWeather';
 import '../styles/CurrentWeather.css';
 
