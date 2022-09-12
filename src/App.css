@@ -1,32 +1,37 @@
 .App {
     height: 100vh;
     width: 100%;
-    background-color: #1d1d1f;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 body, html {
-    overflow: hidden;
+    overflow-x: hidden;
+	background-color: #1d1d1f;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 .App-Intro {
 	position: absolute;
-	top: 2rem;
-	margin-right: 1.2rem;
-	opacity: 0;
+	top: 12rem;
+	margin-right: 4rem;
+	left: 0;
+	opacity: 1;
 	display: flex;
+	flex-direction: column;
 	justify-content: space-evenly;
-	gap: 2rem;
-	height: 5rem; 
-	animation: textFadeIn 1s ease-in forwards;
+	align-items: center;
 }
 .App-Intro img {
 	transform: scale(0.8);
 }
 .App-Intro_h1 {
     font-size: 32px;
-	transform: scale(1.2);
+	transform: scale(1.5);
+	font-weight: 700;
+	margin-right: 11rem;
 	background: linear-gradient(91.36deg,
 			#eca658 0%,
 			#f391a6 13.02%,
@@ -43,6 +48,48 @@ body, html {
 	-webkit-animation: intro-gradient 10s infinite ease both;
 	-moz-animation: intro-gradient 10s infinite ease both;
 	animation: intro-gradient 10s infinite ease both;
+}
+.App-Intro p {
+	color: #fff;
+	width: 60%;
+	line-height: -0.045em;
+	font-weight: 400;
+	margin-right: 8rem;
+}
+#App-IntroContent {
+	font-size: 20px;
+}
+#App-Intro-Eyebrow {
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.556);
+}
+.App-Navigate_cta {
+	margin-right: 8rem;
+	width: 60%;
+	height: 4rem;
+	gap: 2rem;
+	display: flex;
+	align-items: center;
+}
+.App-Navigate_viewCode {
+	width: 40%;
+	color: #fff;
+	background-color: #0071e3;
+	font-size: 14px;
+    line-height: 1.1764805882;
+    letter-spacing: -0.022em;
+	padding: 8px 16px;
+    border-radius: 980px;
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+#App-Navigate_howItWorks {
+	color: #2997ff;
 }
 
 @keyframes textFadeIn {

@@ -1,3 +1,4 @@
+import Home from './Home';
 import '../styles/Display.css';
 
 export default function Display() {

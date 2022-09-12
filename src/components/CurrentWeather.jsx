@@ -9,8 +9,8 @@ export default function CurrentWeather() {
     const [weatherHigh, setWeatherHigh] = useState(91);
     const [weatherLow, setWeatherLow] = useState(76);
 
-    const [latitude, longitude] = useFetch();
-    console.log(latitude, longitude);
+/*     const [latitude, longitude] = useFetch();
+    console.log(latitude, longitude); */
 
 
   return (
