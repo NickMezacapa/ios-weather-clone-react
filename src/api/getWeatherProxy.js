@@ -9,6 +9,5 @@ export default async function getWeatherProxy(latitude, longitude) {
     let res = await axios.get(request);
     let data = res.data;
 
-
     return data;
 };

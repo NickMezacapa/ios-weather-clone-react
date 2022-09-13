@@ -1,4 +1,4 @@
-import '../styles/Display.css';
+import './styles/Display.css';
 
 export default function Display() {
   return (

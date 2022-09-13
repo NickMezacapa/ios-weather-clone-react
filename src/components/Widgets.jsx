@@ -3,7 +3,7 @@ import { BsBatteryFull } from 'react-icons/bs';
 import { MdSignalCellularAlt } from 'react-icons/md';
 import { TiLocationArrowOutline } from 'react-icons/ti';
 import LiveClock from './LiveClock';
-import '../styles/Widgets.css';
+import './styles/Widgets.css';
 
 export default function Widgets() {
   return (

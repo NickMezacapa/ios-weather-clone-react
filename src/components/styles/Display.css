@@ -1,7 +1,7 @@
 .Display-iPhone_cta {
     position: absolute;
     top: 8rem;
-    background-image: url('../assets/blank-iphone.png');
+    background-image: url('../../assets/blank-iphone.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

@@ -1,6 +1,6 @@
 import CurrentWeather from './CurrentWeather';
 import Widgets from './Widgets';
-import '../styles/Home.css';
+import './styles/Home.css';
 
 export default function Home() {
   return (
