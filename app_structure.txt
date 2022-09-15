@@ -25,14 +25,18 @@ The Home component will render 3 children:
         - Widgets serve no functionality for getting/setting weather logic.
         - Widgets emulate the iPhone's battery life, wifi signal, location services, and time (Live Clock).
 
+
     2. CurrentWeather 
         - CurrentWeather displays the current forecast for the user's location.
+
         - CurrentWeather utilizes 2 custom hooks to efficiently retrieve data:
             1. useGetLocation
             2. useGetWeather
+
         - On first mount, CurrentWeather will call (useGetLocation) to get user's current latitude and longitude.
             - useGetLocation will use the browser's geolocation API to get the user's latitude and longitude.
-            - if user elects not to share location, default values for lat/lon are returned. 
+            - if user elects not to share location, default values for lat/lon are returned.
+
         - CurrentWeather will then use another custom hook (useGetWeather) to get the current weather given the latitude and longitude.
             - useGetWeather will use the OpenWeatherMap API to get the current weather.
                 - The API call is instantiated and imported from a separate file (getWeatherProxy).
@@ -40,6 +44,8 @@ The Home component will render 3 children:
                 - useGetWeather will use the returned promise to set the current weather state. 
             - if the API call fails, default values for weather are returned.
 
+
     3. WeeklyForecast
+        - WeeklyForecast displays the forecasted high/low temperature for the next 7 days.
 
 -----------------------------------------------------------------------------------------------------------------
