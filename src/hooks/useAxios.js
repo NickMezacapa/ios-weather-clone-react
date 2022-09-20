@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 
-export default function useAxios(initialValue) {
+export function useAxios(initialValue) {
     const [data, setData] = useState(initialValue);
 
     const controller = new AbortController();

@@ -15,3 +15,4 @@ export default async function getWeatherProxy(latitude, longitude) {
     return data;
 };
 
+
